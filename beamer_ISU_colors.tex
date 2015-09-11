@@ -1,0 +1,125 @@
+\documentclass[xcolor=dvipsnames, t]{beamer}
+
+%%%%%%%%%%%
+% Beamer Template using Iowa State University colors
+% Designed by Kevin Palmowski with help from the internet
+% This template can be freely used and modified and is distributed as-is, 
+% 	but no money should be changing hands (literally or figuratively) because of its use.
+
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+
+\definecolor{Cardinal}{HTML}{CE1126}
+\definecolor{Gold}{HTML}{F2BF49}
+
+\usecolortheme[named=Cardinal]{structure}
+\setbeamertemplate{navigation symbols}{}
+
+
+%% Remove the automatic period after "Proof." when using proof env.
+%% See also <path-to-TeX>/latex/beamer/base/beamerbasetheorems.sty
+%\renewenvironment{proof}[2][\proofname]{%
+%    \par
+%    \def\insertproofname{#1}%
+%    \pushQED{\qed}
+%    \usebeamertemplate{proof begin}#2}
+%  {\popQED\usebeamertemplate{proof end}}
+
+
+%% Table of Contents
+%\AtBeginSection[]
+%{
+%  \begin{frame}<beamer>{Outline}
+%    \tableofcontents[currentsection]
+%  \end{frame}
+%}
+
+
+% Set up the title block and the block structure
+\setbeamercolor{title}{bg=structure, fg=white}
+\setbeamercolor{frametitle}{bg=structure, fg=white}
+\setbeamercolor{block title}{bg=structure, fg=white}
+\setbeamercolor{block body}{bg=Gold!50!white}%{bg=normal text.bg!90!gray}
+
+% Adjust the itemizes and enumerates to be correct
+% See <path-to-TeX>/latex/beamer/base
+%	for the Beamer themes (particularly inner themes, .\themes\inner) for more info
+\setbeamertemplate{itemize item}{\scriptsize\raise1.25pt\hbox{\donotcoloroutermaths$\blacktriangleright$}}
+\setbeamertemplate{itemize subitem}{\tiny\raise1.5pt\hbox{\donotcoloroutermaths$\blacktriangleright$}}
+\setbeamertemplate{enumerate item}{\insertenumlabel)}
+
+% Custom footer
+\setbeamertemplate{footline}{\hspace{1pt} \insertshortauthor \, (\insertshortinstitute) \hfill \insertframenumber \ of \inserttotalframenumber\phantom{/}}
+
+% Bibliography
+\setbeamertemplate{bibliography item}[text]
+\setbeamercolor{bibliography entry author}{fg=black}		% Text color (author is the first slot)
+
+
+% %%%%%%%%%%%%%%%%
+\newtheorem{Observation}{Observation}
+\newtheorem{Proposition}{Proposition}
+\newtheorem{Remark}{Remark}
+
+\newcommand{\defbf}[1]{\textcolor{Gold!80!black}{\textbf{#1}}}
+
+
+
+%%%%%%%%%%%%
+%	AUTHORSHIP INFO
+%%%%%%%%%%%%
+\title[short-TBD]{TBD}
+\subtitle{None}
+\author[S. Name]{Long Name}
+\institute[ISU]{Department of Mathematics \\ Iowa State University \\ Ames, IA 50011 \\ \texttt{mynetid@iastate.edu}}
+\date[xx-xx-xxxx]{XXX XX, XXXX}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		DOCUMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{frame}[plain]
+\maketitle
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%
+\begin{frame}{Sample}
+This is a sample of \defbf{\textbackslash defbf}.
+
+\begin{Theorem}
+Something was proven.
+\end{Theorem}
+
+\begin{proof}
+Self-explanatory.
+\end{proof}
+
+\begin{enumerate}
+\item Enumerated list
+\item Item 2
+\end{enumerate}
+
+\begin{itemize}
+\item Itemized list
+
+\begin{itemize}
+\item Sub-list
+\end{itemize}
+
+\item Item 2
+\end{itemize}
+
+\end{frame}
+
+
+
+
+\end{document}
