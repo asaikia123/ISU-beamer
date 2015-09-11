@@ -12,6 +12,6 @@ The `\defbf` macro makes text bold and gold-colored.
 
 Note that `theorem` and related `amsthm` environments are modified to fit the color theme.
 
-The `\item`s of `enumerate`d lists are colored.
+The numeral preceding an `\item` in an `enumerate` list is cardinal-colored.
 
-The `\item`s of `itemize`d lists are triangles.
+An `\item` in an `itemize` list is marked via a cardinal-colored triangle.
