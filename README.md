@@ -6,9 +6,12 @@ This beamer template is provided as-is without warranty or guarantee. The templa
 
 ## How to use
 
-This is a standard LaTeX Beamer template. Just edit and go.
+This is a standard LaTeX Beamer template. Just edit and go. As you can see from the PDF preview, the theme is "clean."
 
 The `\defbf` macro makes text bold and gold-colored.
 
-The `theorem` and related environments are also themed.
+Note that `theorem` and related `amsthm` environments are modified to fit the color theme.
 
+The `\item`s of `enumerate`d lists are colored.
+
+The `\item`s of `itemize`d lists are triangles.
