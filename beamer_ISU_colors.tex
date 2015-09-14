@@ -30,12 +30,14 @@
 %  {\popQED\usebeamertemplate{proof end}}
 
 
-%% Show ToC slide before each section
+%% Show ToC slide before each section (but not section 1 since ToC is shown right before)
 %\AtBeginSection[]
 %{
+%\ifnum \thesection>1
 %  \begin{frame}<beamer>{Outline}
 %    \tableofcontents[currentsection]
 %  \end{frame}
+%\fi
 %}
 
 % Colors for items in Table of Contents
